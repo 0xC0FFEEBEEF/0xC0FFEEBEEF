@@ -13,8 +13,14 @@ The full write-ups live on **[nbdevlab.com](https://www.nbdevlab.com)**.
 - **Emergency power policy**: when the UPS loses mains, the main hypervisor sheds heavy VMs and containers, keeps
   DNS alive, powers down a second server through iDRAC, sets an iLO power cap, and restores everything when power
   returns. Core network services went from a few minutes of runtime to roughly 15–20.
-- **Byteme R730**: a Dell PowerEdge R730 rebuilt as the lab's heavy compute and GPU node: HBA swap, Tesla P100s,
+- **byteme2, HP ProLiant DL360 Gen9**: the main Proxmox hypervisor (2× Xeon E5-2683 v4, 32 cores, 64 GB, ZFS).
+  It runs the house services and DNS, and decides what happens when the power goes out.
+- **byteme, Dell PowerEdge R730**: rebuilt as the lab's heavy compute and GPU node: HBA swap, two Tesla P100s,
   CPU and RAM upgrade. Storage expansion is next.
+- **byteme3, HP ProLiant DL380 Gen9**: 2× Xeon E5-2690 v3 with 10 TB of storage installed, waiting on RAM before
+  it comes back online.
+- **deadlock**: a bare-metal Intel server that runs as a slerm node. It stays off when idle and wakes when jobs
+  need it.
 - **AICMS**: scans my VMs, services and hypervisors, works out how they relate, and turns that into documentation
   an AI (and I) can use.
 - **Security and monitoring**: Wazuh as the SIEM for every hypervisor, server and the VPS, with Zabbix and Grafana
@@ -24,7 +30,7 @@ The full write-ups live on **[nbdevlab.com](https://www.nbdevlab.com)**.
 
 ### The lab
 
-Two Proxmox servers and a bare-metal node behind a WatchGuard Firebox, with a third Proxmox host parked:
+Two Proxmox servers and a bare-metal node behind a WatchGuard Firebox, with the DL380 waiting on RAM:
 144 CPU threads, 160 GB of RAM, 12 TiB of ZFS and two Tesla P100s. There are no inbound ports at home;
 everything comes in over Cloudflare Tunnel, WireGuard or Tailscale. It also runs Nextcloud, Home Assistant,
 Gitea, Pi-hole, Jellyfin, Proxmox Backup Server and Proxmox Mail Gateway.
