@@ -31,7 +31,8 @@ The full write-ups live on **[nbdevlab.com](https://www.nbdevlab.com)**.
 ### The lab
 
 Two Proxmox servers and a bare-metal node behind a WatchGuard Firebox, with the DL380 waiting on RAM:
-144 CPU threads, 160 GB of RAM, 12 TiB of ZFS and two Tesla P100s. There are no inbound ports at home;
+144 CPU threads, 160 GB of RAM, 12 TiB of ZFS in service (with another 10 TB inside byteme3 waiting to be
+brought online) and two Tesla P100s. There are no inbound ports at home;
 everything comes in over Cloudflare Tunnel, WireGuard or Tailscale. It also runs Nextcloud, Home Assistant,
 Gitea, Pi-hole, Jellyfin, Proxmox Backup Server and Proxmox Mail Gateway.
 
@@ -66,7 +67,7 @@ Gitea, Pi-hole, Jellyfin, Proxmox Backup Server and Proxmox Mail Gateway.
 - [nbdevlab-site](https://github.com/0xC0FFEEBEEF/nbdevlab-site): the source of nbdevlab.com
 - [hp-envy-fan](https://github.com/0xC0FFEEBEEF/hp-envy-fan): Linux fan-curve driver and KDE Plasma 6 widget for the HP ENVY x360 15
 - [cubepro-klipper-cura](https://github.com/0xC0FFEEBEEF/cubepro-klipper-cura): Cura profile for a Cube Pro running Klipper
-- [cyclops-voice-fx](https://github.com/0xC0FFEEBEEF/cyclops-voice-fx): makes any TTS voice sound like the Subnautica Cyclops
+- [cyclops-voice-fx](https://github.com/0xC0FFEEBEEF/cyclops-voice-fx): work in progress: a TTS post-processor aiming for the Subnautica Cyclops voice, not close to it yet
 
 When I'm not in the lab: gaming, D&D, and time with friends and family.
 
