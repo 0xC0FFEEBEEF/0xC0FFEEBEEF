@@ -58,7 +58,7 @@ Gitea, Pi-hole, Jellyfin, Proxmox Backup Server and Proxmox Mail Gateway.
 **AI tooling on local models**
 - [open-webui-code-mode](https://github.com/0xC0FFEEBEEF/open-webui-code-mode): a Chat | Code switch for Open WebUI, one coding agent per chat
 - [openwebui-computer-agent](https://github.com/0xC0FFEEBEEF/openwebui-computer-agent): a model drives a real desktop from a chat
-- [owl-openwebui-cli](https://github.com/0xC0FFEEBEEF/owl-openwebui-cli): a terminal coding agent for Open WebUI, forked from Codex CLI
+- [owl-openwebui-cli](https://github.com/0xC0FFEEBEEF/owl-openwebui-cli): a terminal agent for Open WebUI, forked from Codex CLI
 - [llm-shared-memory](https://github.com/0xC0FFEEBEEF/llm-shared-memory): one conversation memory shared by Claude Code, Codex and local models
 - [zsh-ai-companion](https://github.com/0xC0FFEEBEEF/zsh-ai-companion): an AI assistant that lives in the zsh prompt
 
