@@ -67,7 +67,6 @@ Gitea, Pi-hole, Jellyfin, Proxmox Backup Server and Proxmox Mail Gateway.
 - [hp-envy-fan](https://github.com/0xC0FFEEBEEF/hp-envy-fan): Linux fan-curve driver and KDE Plasma 6 widget for the HP ENVY x360 15
 - [cubepro-klipper-cura](https://github.com/0xC0FFEEBEEF/cubepro-klipper-cura): Cura profile for a Cube Pro running Klipper
 - [cyclops-voice-fx](https://github.com/0xC0FFEEBEEF/cyclops-voice-fx): makes any TTS voice sound like the Subnautica Cyclops
-- [dice-king-leaderboard](https://github.com/0xC0FFEEBEEF/dice-king-leaderboard): a D&D dice-collection leaderboard on Cloudflare Workers
 
 When I'm not in the lab: gaming, D&D, and time with friends and family.
 
