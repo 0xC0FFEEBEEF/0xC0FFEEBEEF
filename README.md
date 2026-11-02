@@ -13,11 +13,11 @@ The full write-ups live on **[nbdevlab.com](https://www.nbdevlab.com)**.
 - **Emergency power policy**: when the UPS loses mains, the main hypervisor sheds heavy VMs and containers, keeps
   DNS alive, powers down a second server through iDRAC, sets an iLO power cap, and restores everything when power
   returns. Core network services went from a few minutes of runtime to roughly 15–20.
-- **byteme2, HP ProLiant DL360 Gen9**: the main Proxmox hypervisor (2× Xeon E5-2683 v4, 32 cores, 64 GB, ZFS).
+- **byteme2, HP ProLiant DL360 Gen9**: the main Proxmox hypervisor (2× Xeon E5-2683 v4, 32 cores / 64 threads, 64 GB, ZFS).
   It runs the house services and DNS, and decides what happens when the power goes out.
-- **byteme, Dell PowerEdge R730**: rebuilt as the lab's heavy compute and GPU node: HBA swap, two Tesla P100s,
-  CPU and RAM upgrade. Storage expansion is next.
-- **byteme3, HP ProLiant DL380 Gen9**: 2× Xeon E5-2690 v3 with 10 TB of storage installed, waiting on RAM before
+- **byteme, Dell PowerEdge R730**: rebuilt as the lab's heavy compute and GPU node, now 2× Xeon E5-2695 v4
+  (36 cores / 72 threads) and 64 GB: HBA swap, two Tesla P100s, CPU and RAM upgrade. Storage expansion is next.
+- **byteme3, HP ProLiant DL380 Gen9**: 2× Xeon E5-2690 v3 (24 cores / 48 threads) with 10 TB of storage installed, waiting on RAM before
   it comes back online.
 - **deadlock**: a bare-metal Intel server that runs as a slerm node. It stays off when idle and wakes when jobs
   need it.
